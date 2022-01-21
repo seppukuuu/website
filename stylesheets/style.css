@@ -1,17 +1,38 @@
+@font-face {
+    font-family: harper;
+    src: url(harper.ttf);
+}
+@font-face {
+    font-family: hp;
+    src: url(hp.ttf);
+}
+
+
+
+
 *{
-    background-color: bisque;
+    background-color: #9199b9;
 }
 
 h1{
     text-align: center;
     
-    background-color: brown;
+    background-color: #3B5C6F;
+    border: 5px solid #36437a;
     border-radius: 25px;
     padding: 20px;
-    width: 200px;
-    height: 150px;
+    font-family: harper;
+    color: white;
+    font-size: 500%; 
+    text-shadow: 10px 1px black;
+   
 }
-
 p{
     text-align: center;
+    color: white;
+    font-family: harper;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke: 1px black;
+}
 }
