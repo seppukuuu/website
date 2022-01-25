@@ -1,22 +1,16 @@
 @font-face {
-    font-family: harper;
-    src: url(harper.ttf);
-}
-
-@font-face {
-    font-family: hp;
-    src: url(hp.ttf);
-}
-
-@font-face {
     font-family: cool;
     src: url(cool.otf) format("opentype");
 }
 
 :root {
-    --primary: #563bd1;
+    --primary: #263a44;
     --dark: #08171f;
     --light: #d3dce4;
+}
+
+body {
+    background-color: #8cb5da;
 }
 
 * {
@@ -24,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: cool;
+    background-color: solid #1E0F28;
 }
 
 .container {
@@ -84,7 +79,7 @@ h1 {
 }
 
 .hamburger.is-active span:nth-child(1) {
-    transform: translate(0px, -2px) rotate (45deg);
+    transform: translate(0px, -2px) rotate(45deg);
 }
 
 .hamburger.is-active span:nth-child(2) {
@@ -93,7 +88,7 @@ h1 {
 }
 
 .hamburger.is-active span:nth-child(3) {
-    transform: translate(-3px, 3px) rotate (-45deg);
+    transform: translate(-3px, 3px) rotate(-45deg);
 }
 
 .hamburger.is-active:hover span {
@@ -104,7 +99,7 @@ h1 {
     display: none;
     flex: 1 1 0%;
     justify-content: flex-end;
-    margin: 0px --16px;
+    margin: 0px -16px;
 }
 
 .menu a {
@@ -113,20 +108,23 @@ h1 {
     font-weight: 600px;
     text-decoration: none;
     transition: 0.4s;
-    padding: 0px 16px;
+    padding: 8px 16px;
     border-radius: 99px;
 }
 
-.menu a.is-active,
+.menu a.is-active {
+    background-color: var(--primary);
+}
+
 .menu a:hover {
     background-color: var(--primary);
 }
 
-@media (mind-width: 768px) {
+@media (min-width: 768px) {
     .hamburger {
         display: none;
     }
     .menu {
-        display: block;
+        display: flex;
     }
 }
