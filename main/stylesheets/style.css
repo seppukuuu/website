@@ -1,0 +1,223 @@
+@font-face {
+    font-family: cool;
+    src: url(cool.otf) format("opentype");
+}
+
+:root {
+    --primary: #3c5e6e;
+    --dark: #08171f;
+    --light: #d3dce4;
+}
+
+body {
+    background-color: #8cb5da;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cool;
+    background-color: solid #1E0F28;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 3px solid solid var(--primary);
+}
+
+h1 {
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--light);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--primary);
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span {
+    background-color: var(--primary);
+}
+
+.menu {
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0px -16px;
+}
+
+.menu a {
+    color: #d3dce4;
+    margin: 0 16px;
+    font-weight: 600px;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.menu a.is-active {
+    background-color: var(--primary);
+}
+
+.menu a:hover {
+    background-color: var(--primary);
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    font-weight: 900;
+    font-size: 15vw;
+    overflow: hidden;
+    color: var(--dark);
+}
+
+.tilt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: tilting 10s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+section span {
+    transition: font-weight 0.4s ease-in;
+    animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+section span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+section span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+section span:nth-child(3) {
+    animation-delay: 3s;
+}
+
+section span:nth-child(4) {
+    animation-delay: 4s;
+}
+
+section span:nth-child(5) {
+    animation-delay: 5s;
+}
+
+section span:nth-child(6) {
+    animation-delay: 6s;
+}
+
+section span:nth-child(7) {
+    animation-delay: 7s;
+}
+
+section span:hover {
+    background-color: #9ac3e7;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 5vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes floating-secondary {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 1vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes tilting {
+    0% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
