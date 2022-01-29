@@ -7,6 +7,7 @@
     --primary: #3c5e6e;
     --dark: #08171f;
     --light: #d3dce4;
+    --body: #8cb5da;
 }
 
 body {
@@ -227,9 +228,31 @@ h1 {
     }
 }
 
+.img1 {
+    width: 100px;
+}
+
 .hr2 {
-    border-top: 1px dashed var(--dark);
-    border: 10px solid var(--dark);
+    border-top: 7.5px dashed var(--dark);
+    border: 7.5px solid var(--dark);
+    margin: 30px -20px 20px;
+}
+
+.img1 {
+    position: absolute;
+    top: 103.5%;
+    left: 48%;
+    padding: 0 20px;
+    background-color: var(--primary);
+    border: 5px solid var(--dark);
+    border-radius: 15px;
+    text-align: center;
+    width: 101px;
+}
+
+.about {
+    padding-top: 150px;
+    text-align: center;
 }
 
 .form {
