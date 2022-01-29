@@ -3,6 +3,11 @@
     src: url(cool.otf) format("opentype");
 }
 
+@font-face {
+    font-family: hp;
+    src: url(harper.ttf);
+}
+
 :root {
     --primary: #3c5e6e;
     --dark: #08171f;
@@ -22,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1260px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -129,11 +134,6 @@ h1 {
     }
 }
 
-.hr1 {
-    border-top: 1px dashed var(--light);
-    border: 5px solid var(--light);
-}
-
 .section1 {
     width: 100vw;
     height: 100vh;
@@ -228,26 +228,17 @@ h1 {
     }
 }
 
-.img1 {
-    width: 100px;
+.hr1 {
+    border-top: 8px solid var(--dark);
+    border-bottom: 8px solid var(--dark);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hr2 {
-    border-top: 7.5px dashed var(--dark);
-    border: 7.5px solid var(--dark);
-    margin: 30px -20px 20px;
-}
-
-.img1 {
-    position: absolute;
-    top: 103.5%;
-    left: 48%;
-    padding: 0 20px;
-    background-color: var(--primary);
-    border: 5px solid var(--dark);
-    border-radius: 15px;
-    text-align: center;
-    width: 101px;
+    border-bottom: 16px solid var(--dark);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about {
@@ -257,4 +248,16 @@ h1 {
 
 .form {
     padding-top: 150px;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+}
+
+.aboutsection {
+    font-size: 100px;
+    font-family: hp;
+    text-align: center;
+    padding-top: 100px;
 }
