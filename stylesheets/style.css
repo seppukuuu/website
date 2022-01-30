@@ -255,9 +255,14 @@ h1 {
     height: auto;
 }
 
-.aboutsection {
+.abouttext {
     font-size: 100px;
     font-family: hp;
     text-align: center;
     padding-top: 100px;
+}
+
+.section2 {
+    background-color: #1572A1;
+    margin-top: 0;
 }
