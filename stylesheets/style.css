@@ -241,6 +241,8 @@ h1 {
     border-bottom: 16px solid var(--dark);
     margin-left: auto;
     margin-right: auto;
+    margin-top: -5px;
+    
 }
 
 .about {
@@ -274,10 +276,11 @@ h1 {
     font-size: 50px;
     font-family: "Exo", sans-serif;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     padding: 90px;
     font-weight: 900;
     color: var(--dark);
+    padding-top: 125px;
 }
 
 .section2 {
@@ -286,3 +289,4 @@ h1 {
     width: 100%;
     display: inline-block;
 }
+
