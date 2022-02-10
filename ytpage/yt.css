@@ -1,0 +1,13 @@
+body{
+    background-color: #8cb5da;;
+}
+
+.yt{
+    text-align: center;
+    border: 5px solid #08171f;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 97.5vw;
+    height: 100vh;
+}

@@ -8,6 +8,10 @@
     src: url(harper.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --primary: #3c5e6e;
     --dark: #08171f;
@@ -289,4 +293,5 @@ h1 {
     width: 100%;
     display: inline-block;
 }
+
 
