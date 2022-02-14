@@ -10,7 +10,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 :root {
     --primary: #3c5e6e;
@@ -18,6 +18,7 @@ html {
     --light: #d3dce4;
     --body: #8cb5da;
     --sec2: #92a1af;
+    --sec3: #c5d9eb;
 }
 
 body {
@@ -246,7 +247,6 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: -5px;
-    
 }
 
 .about {
@@ -267,7 +267,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #70869b;
+    background-color: #c5d9eb;
     width: 1200px;
     height: 500px;
     margin: 15vh auto;
@@ -285,6 +285,7 @@ h1 {
     font-weight: 900;
     color: var(--dark);
     padding-top: 125px;
+    text-shadow: 5px solid var(--body);
 }
 
 .section2 {
@@ -294,4 +295,30 @@ h1 {
     display: inline-block;
 }
 
+.gradientbg {
+    background: rgb(146, 161, 175);
+    background: -moz-linear-gradient(180deg, rgba(146, 161, 175, 1) 15%, rgba(197, 217, 235, 1) 67%);
+    background: -webkit-linear-gradient(180deg, rgba(146, 161, 175, 1) 15%, rgba(197, 217, 235, 1) 67%);
+    background: linear-gradient(180deg, rgba(146, 161, 175, 1) 15%, rgba(197, 217, 235, 1) 67%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#92a1af", endColorstr="#c5d9eb", GradientType=1);
+    padding-top: 200px;
+}
 
+.section3 {
+    background-color: #d3dce4;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.progress {
+    padding-top: 150px;
+    background-color: var(--sec3);
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+    background-color: #3c5e6e;
+    border-top: #08171f solid 5px;
+}
