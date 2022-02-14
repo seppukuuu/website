@@ -1,19 +1,17 @@
-body{
-    background-color: #8cb5da;;
+body {
+    background-color: #8cb5da;
+    ;
     padding-top: 120px;
 }
 
-.yt{
+.yt {
     text-align: center;
     border: 5px solid #08171f;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
     width: 70vw;
     height: 70vh;
     margin: 0 auto;
-    display:block;
-    text-align:center;
-
+    display: block;
+    text-align: center;
 }
-
