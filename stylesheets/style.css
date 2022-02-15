@@ -320,42 +320,29 @@ footer {
     height: 80px;
     text-align: center;
     background: rgb(41, 41, 41);
-    background: -moz-linear-gradient(
-    180deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(24, 30, 48, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(24, 30, 48, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(24, 30, 48, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#181e30",GradientType=1);
-  height: 100%;
-  width: 100%;
+    background: -moz-linear-gradient( 180deg, rgba(41, 41, 41, 1) 0%, rgba(24, 30, 48, 1) 100%);
+    background: -webkit-linear-gradient( 180deg, rgba(41, 41, 41, 1) 0%, rgba(24, 30, 48, 1) 100%);
+    background: linear-gradient( 180deg, rgba(41, 41, 41, 1) 0%, rgba(24, 30, 48, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#292929", endColorstr="#181e30", GradientType=1);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0%;
 }
-
-
 
 .div {
     font-family: "Merriweather", serif;
     font-size: 2rem;
-  }
-  
-  .p,
-  .a {
+}
+
+.p,
+.a {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 2rem;
     color: #eee;
-  }
-  
-  .ul {
+}
+
+.ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -363,46 +350,165 @@ footer {
     margin: 1rem;
     list-style-type: none;
     font-size: 2rem;
-  }
-  
-  .ul li {
+}
+
+.ul li {
     padding: 1rem;
-  }
-  
-  .fab {
+}
+
+.fab {
     font-size: 5rem;
-  }
-  
-  
-  
-  .fa-youtube,
-  .fa-instagram,
-  .fa-github {
+}
+
+.fa-youtube,
+.fa-instagram,
+.fa-github,
+.fa-snapchat {
     transition: 0.4s;
     cursor: pointer;
-  }
+}
 
-  
-  
-  .fa-youtube:hover,
-  .fa-youtube:focus {
+.fa-youtube:hover,
+.fa-youtube:focus {
     color: #f84d50;
     transform: scale(1.1);
-  }
-  
-  .fa-instagram:hover,
-  .fa-instagram:focus {
+}
+
+.fa-instagram:hover,
+.fa-instagram:focus {
     color: #e260cc;
     transform: scale(1.1);
-  }
-  
-  .fa-github:hover,
-  .fa-github:focus {
+}
+
+.fa-github:hover,
+.fa-github:focus {
     color: #7c7878;
     transform: scale(1.1);
-  }
-  
+}
 
-  
-  
-  
+.fa-snapchat:hover,
+.fa-snapchat:focus {
+    color: #e5e75b;
+    transform: scale(1.1);
+}
+
+.section4 {
+    background-color: #C5D9EB;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding-top: 0%;
+}
+
+.card {
+    width: 70%;
+    padding: 30px 90px 90px 90px;
+    border: 6px solid var(--dark);
+    box-shadow: 20px 20px 0 var(--primary);
+    border-radius: 50px;
+    position: relative;
+    background-color: var(--body);
+    margin: 0 auto;
+}
+
+.card h2 {
+    color: var(--dark);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-gap: 30px;
+}
+
+.card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+}
+
+.card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: var(--dark);
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: #7cb7ce;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 5px solid var(--dark);
+    box-shadow: 10px 10px 0 var(--primary);
+    color: var(--dark);
+    border-radius: 50px;
+}
+
+.card .row .form-group label {
+    line-height: 40px;
+    color: var(--dark);
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+    margin-top: 64px;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+    border: 5px solid #687fa0;
+    transition: all 0.5s;
+}
+
+.card .row input[type="submit"] {
+    border: 5px solid var(--dark);
+    box-shadow: 10px 10px 0 var(--primary);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--dark);
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+    border: 5px solid var(--dark);
+    color: var(--dark);
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+    .card .row {
+        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+    }
+    .card {
+        padding: 20px;
+    }
+    .card h2 {
+        font-size: 34px;
+    }
+    .card .row input[type="submit"] {
+        width: 100%;
+    }
+}
