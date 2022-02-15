@@ -404,10 +404,10 @@ footer {
     width: 70%;
     padding: 30px 90px 90px 90px;
     border: 6px solid var(--dark);
-    box-shadow: 20px 20px 0 var(--primary);
+    box-shadow: 15px 10px 0 var(--primary);
     border-radius: 50px;
     position: relative;
-    background-color: var(--body);
+    background-color: var(--sec2);
     margin: 0 auto;
 }
 
@@ -445,7 +445,7 @@ footer {
     position: absolute;
     width: 90%;
     height: 100%;
-    background: #7cb7ce;
+    background: #b3d3e0;
     outline: none;
     font-size: 24px;
     padding: 10px 0 10px 20px;
@@ -470,7 +470,7 @@ footer {
 
 .card .row .form-group input:focus,
 .card .row .form-group textarea:focus {
-    border: 5px solid #687fa0;
+    border: 5px solid var(--body);
     transition: all 0.5s;
 }
 
@@ -482,7 +482,7 @@ footer {
     width: 50%;
     cursor: pointer;
     outline: none;
-    background: transparent;
+    background: #a8e8f1;
     text-transform: uppercase;
     color: var(--dark);
     line-height: 40px;
