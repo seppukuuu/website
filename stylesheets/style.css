@@ -319,6 +319,104 @@ h1 {
 footer {
     height: 80px;
     text-align: center;
-    background-color: #3c5e6e;
-    border-top: #08171f solid 5px;
+    background: rgb(41, 41, 41);
+    background: -moz-linear-gradient(
+    180deg,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(24, 30, 48, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(24, 30, 48, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(24, 30, 48, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#181e30",GradientType=1);
+  height: 100%;
+  width: 100%;
 }
+
+
+
+.div {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+  }
+  
+  .p,
+  .a {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    color: #eee;
+  }
+  
+  .ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    list-style-type: none;
+    font-size: 2rem;
+  }
+  
+  .ul li {
+    padding: 1rem;
+  }
+  
+  .fab {
+    font-size: 5rem;
+  }
+  
+  
+  
+  .fa-youtube,
+  .fa-instagram,
+  .fa-github {
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .fa-facebook:hover,
+  .fa-facebook:focus {
+    color: #1877f2;
+    transform: scale(1.1);
+  }
+  
+  .fa-twitter:hover,
+  .fa-twitter:focus {
+    color: #1da1f2;
+    transform: scale(1.1);
+  }
+  
+  .fa-youtube:hover,
+  .fa-youtube:focus {
+    color: #df2426;
+    transform: scale(1.1);
+  }
+  
+  .fa-instagram:hover,
+  .fa-instagram:focus {
+    color: #bd22a2;
+    transform: scale(1.1);
+  }
+  
+  .fa-github:hover,
+  .fa-github:focus {
+    color: #000;
+    transform: scale(1.1);
+  }
+  
+  .fa-github:hover,
+  .fa-github:focus {
+    color: #000;
+    transform: scale(1.1);
+  }
+  
+  
+  
