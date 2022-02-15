@@ -445,7 +445,7 @@ footer {
     position: absolute;
     width: 90%;
     height: 100%;
-    background: #b3d3e0;
+    background: rgb(211, 220, 228);
     outline: none;
     font-size: 24px;
     padding: 10px 0 10px 20px;
@@ -493,8 +493,7 @@ footer {
 }
 
 .card .row input[type="submit"]:hover {
-    border: 5px solid var(--dark);
-    color: var(--dark);
+    background-color: white;
     transition: all 0.4s;
 }
 
